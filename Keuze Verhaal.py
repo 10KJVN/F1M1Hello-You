@@ -1,4 +1,5 @@
 print("Hello You!")
-print("welkom.")
-
-
+print("Wie ben jij?")
+naam = input ()
+print("Hello" , naam)
+print("Dit verhaal is gebaseerd op waargebeurde verhalen van vluchtelingen die naar Nederland zijn gevlucht.")
