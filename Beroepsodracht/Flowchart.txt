@@ -1,0 +1,35 @@
+Begin Verhaal Parwana, verdeelt in 21 stukken
+START = Nadat haar vader een dreigbrief van de Taliban ontving, vluchtte Parwana samen met hem halsoverkop uit Afghanistan.
+
+Verhaal stukje 1 = Vader: Parwana, pak snel wat je hebt, we moeten ervandoor.  
+A. Pak je Konijntje's knuffel/ B. Pak je Beertje's knuffel.
+
+Verhaal stukje 2 = Parwana vraagt aan haar vader of mama niet meekomt?
+A. Parwana, er is geen tijd om afscheid te nemen/B. We gaan straks wel weer terug naar mama/C. Mama komt later
+
+Verhaal stukje 3 = Parwana en haar vader slaan op de vlucht vanuit Afghanistan willen zij naar Nederland
+A. Ga 's Nachts te paard via de bergen/B. Ga te voet richting de grens
+
+Verhaal stukje 4 = Parwana en haar vader lopen door de stad, opzoek naar een veilige vluchtroute.
+A. Betaal een mensensmokkelaar om ze naar de grens van Iran te brengen/ B. Ga via Pakistan
+
+Verhaal stukje 5 = Parwana mist haar moeder en vraagt haar vader of ze nog terug kunnen.
+A. Ze gaan niet terug en gaan verder zonder om te kijken. / B. Vader stelt Parwana gerust en zegt dat ze mama binnekort weer zal zien
+
+Verhaal stukje 6 = Parwana en haar vader zijn 's Nachts in de bergen waar het koud is. Het eten is bijna op.
+A. Ze gaan verder
+Verhaal Stukje 7
+Verhaal Stukje 8
+Verhaal Stukje 9
+Verhaal stukje 10
+Verhaal stukje 11
+Verhaal stukje 12
+Verhaal stukje 13
+Verhaal stukje 14
+Verhaal stukje 15
+Verhaal stukje 16
+Verhaal stukje 17
+Verhaal stukje 18
+Verhaal stukje 19
+Verhaal Stukje 20
+Verhaal Stukje 21
