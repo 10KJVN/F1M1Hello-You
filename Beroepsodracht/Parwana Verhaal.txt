@@ -62,3 +62,13 @@ Einde 1: Dood tijdens de reis
 Einde 2: Normaal Einde, Parwana en haar familie wonen veilig in Nederland
 Einde 3: Worden Terug gestuurd naar Afghanistan
 Einde 4: Parwana en haar familie worden geaccepteerd door Nederlanders en bouwen hier een toekomst op.
+
+while Q1:
+    print("")
+    InputText = input().capitalize()
+    if InputText == "A":
+        Q = False
+        Q = True
+    if InputText == "B":
+        Q = False
+        Q = True
