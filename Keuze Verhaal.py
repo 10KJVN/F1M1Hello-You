@@ -1,3 +1,6 @@
+import os
+from typing import Text
+
 Q1 = True
 Q2 = False
 Q3 = False
@@ -37,9 +40,11 @@ while Q1:
     if InputText == "A":
         Q1 = False
         Q3 = True
+        os.system('cls')
     if InputText == "B":
         Q1 = False
         Q2 = True
+        os.system('cls')
 #Twijfelen tussen Vechten of Vluchten.
 while Q2:
     print("De Taliban heeft je broer al vermoord.")
@@ -48,13 +53,16 @@ while Q2:
     time.sleep(2)
     print("A: Je vlucht dezelfde avond nog.")
     print("B: Je gaat het verzet in.")
+    print("")
     InputText = input().capitalize()
     if InputText == "A":
         Q2 = False
         Q4 = True
+        os.system('cls')
     if InputText == "B":
         Q2 = False
         Q6 = True
+        os.system('cls')
 #Veilige Route, Vluchten
 while Q3:
     print("Je hebt als doel om naar Europa te vluchten.")
@@ -68,43 +76,44 @@ while Q3:
     if InputText == "A":
         Q3 = False
         Q5 = True
+        os.system('cls')
     if InputText == "B":
         Q3 = False
         Q4 = True
-#Laatste kans om te kiezen tussen vluchten of vechten.
+        os.system('cls')
+#Makkelijkste manier naar Turkije.
 while Q4:
     print("Je komt aan in de hoofdstad Kabul.")
     print("De enigste vlucht beschikbaar is naar Turkije.")
-    print("Terwijl je in Pakistan misschien meer kans hebt op succes.")
     time.sleep(2)
-    print("Wat ben je van plan te doen.")
-    print("A: Ga naar Turkije.")
-    print("B: Ga naar Pakistan.")
+    print("Type A to continue...")
     InputText = input().capitalize()
     if InputText == "A":
         Q4 = False
         Q5 = True
-    if InputText == "B":
-        Q4 = False
-        Q6 = True
+        os.system('cls')
 #Toch gekozen om te vluchten. Locatie: Turkije.
 while Q5:
-    print("Na je lange reis kom je aan in Turkije.")
+    print("Na een lange reis kom je aan in Turkije.")
     print("Je paspoort is verlopen dus je bent er eigenlijk illegaal..")
     print("Ook hebben jij en Parwana al 2 dagen niks gegeten.")
     print("Wat doe je?")
+    print("")
     print("A: Ga opzoek naar eten.")
     print("B: Reis verder naar Izmir.")
+    print("")
     InputText = input().capitalize()
     if InputText == "A":
         Q5 = False
         Q9 = True
+        os.system('cls')
     if InputText == "B":
         Q5 = False
-        Q9 = True
+        Q7 = True
+        os.system('cls')
 #Je hebt gekozen om te Vechten.
 while Q6:
-    print("Je hebt Parwana achtergelaten met de familie om te vechten.")
+    print("Je hebt Parwana achtergelaten met je familie, om te vechten.")
     print("Er is nu geen weg meer terug. Jij en je broer hebben al eerder in het leger gevochten.")
     print("Vandaar dat je geen training nodig hebt, je wilt gewoon een toekomst voor je gezin.")
     time.sleep(2)
@@ -115,57 +124,81 @@ while Q6:
     print("B: Je bent bang om dood te gaan, dus je ontvlucht het leger.")
     InputText = input().capitalize()
     if InputText == "A":
-        Q = False
-        Q = True
+        Q6 = False
+        Q8 = True
+        os.system('cls')
     if InputText == "B":
-        Q = False
-        Q = True
-
+        Q6 = False
+        Q10 = True
+        os.system('cls')
+#Izmir, opweg naar Griekeland.
 while Q7:
-    print("Je rent naar binnen om je familie te halen.")
-    print("Jullie rennen via de achter deur naar buiten en lopen om naar de auto.")
-    print("In de auto krijgen jullie 2 opties.")
-    print("A: Jullie gaan naar het vliegveld.")
-    print("B: Jullie gaan naar de grens.")
+    print("Na veel lopen en meeliften met auto's komen jij en Parwana aan in Izmir.")
+    print("Er is een kleine markt waar je eten koopt voor jezelf en Parwana.")
+    time.sleep(1)
+    print("")
+    print("Je vraagt aan de verkopers hoe je het snelste naar Griekenland kan")
+    print("Uitendelijk heb je besloten om een mensensmokkelaar te betalen voor een gevaarlijke boottocht.")
+    time.sleep(2)
+    print("Er is maar 1 boot, het risico is groot. Maar er is geen andere optie.")
+    print("Type A to continue...")
     print("")
     InputText = input().capitalize()
     if InputText == "A":
         Q7 = False
-        Q9 = True
-    if InputText == "B":
-        Q7 = False
-        Q11 = True
-
+        Q13 = True
+        os.system('cls')
+#Verslagen door de Taliban.
 while Q8:
+    print("Eenmaal in gebied van de Taliban, wordt je belaagd door een verrassings aanval.")
+    print("Jij en de rest van de soldaten zijn gevangen genomen.")
+    print("Wat doe je nu? Je executie opwachten, of de andere aansporen om te ontsnappen.")
     print("")
+    time.sleep(2)
+    print("A: Wachten op executie.")
+    print("B: Medegevangen aansporen te ontsnappen.")
     InputText = input().capitalize()
     if InputText == "A":
-        Q = False
-        Q = True
+        Q8 = False
+        Q15 = True
+        os.system('cls')
     if InputText == "B":
-        Q = False
-        Q = True
-
+        Q8 = False
+        Q14 = True
+        os.system('cls')
+#Ontwijk de politie.
 while Q9:
-    print("Jullie komen aan bij de bij het vliegveld.")
-    print("Je gaat naar de balie toe en vraagt of jullie naar Nederland mogen vluchten.")
-    print("Jullie hebben toestemming gekregen van Nederland om daar heen te vluchten")
-    print("Jullie wachten op het vliegtuig.")
-    print("Type: A to continue...")
+    print("Je gaat opzoek naar eten voor jouw en Parwana.")
+    print("Terwijl je rond vraagt naar een plek om te eten in het Engels maakt het je verdacht.")
+    print("Iemand licht de politie in.")
+    print("Je herinnert je dat je illegaal in Turkije bent.")
+    print("")
+    time.sleep(2)
+    print("Wat doe je, steel eten en sla op de vlucht. Of ga je je verstoppen voor de politie?")
+    print("A: Verstoppen.")
+    print("B: Stelen en vluchten.")
     InputText = input().capitalize()
     if InputText == "A":
         Q9 = False
-        Q15 = True
+        Q11 = True
+        os.system('cls')
+    if InputText == "B":
+        Q9 = False
+        Q18 = True
+        os.system('cls')
 
 while Q10:
-    print("")
+    print("Je bent succesvol het leger ontsnapt.")
+    print("Het enige nadeel is dat je nu wordt gezocht door zowel de Taliban als het Verzet.")
     InputText = input().capitalize()
     if InputText == "A":
-        Q = False
-        Q = True
+        Q10 = False
+        Q12 = True
+        os.system('cls')
     if InputText == "B":
-        Q = False
-        Q = True
+        Q10 = False
+        Q20 = True
+        os.system('cls')
 
 while Q11:
     print("Jullie komen bij de grens aan")
@@ -217,17 +250,31 @@ while Q14:
         Q = True
 
 while Q15:
-    print("Het vliegtuig is er en jullie gaan aanboord. ")
-    print("Eenmaal aanboord zoeken jullie een goede plek uit.")
+    print("*8 uur later.*")
+    time.sleep(1)
+    print("Je denkt aan je familie.")
     print("")
-    print("*5 uur later*")
+    print("Maar, je hebt geen spijt van de keuzes die je hebt gemaakt.")
+    time.sleep(2)
+    print("Een lid van de Taliban haalt je uit je cel en doet een zak over je hoofd.")
+    time.sleep(3)
+    print("Je wordt geëxecuteerd.")
     print("")
-    print("Type: A to continue...")
+    print("GAME OVER.")
+    print("Wil je opniew herstarten? Y/N")
     InputText = input().capitalize()
-    if InputText == "A":
+    if InputText == "y" or InputText == "Y":
         Q15 = False
-        Q19 = True
-
+        Q1 = True
+        os.system('cls') 
+    if InputText == "n" or InputText == "N":
+        print("[o]Thanks for running")
+        print("")
+        os.system('cls')
+    elif InputText == () :
+        print("Invalid choice.")
+        exit()
+        
 while Q16:
     print("")
     InputText = input().capitalize()
