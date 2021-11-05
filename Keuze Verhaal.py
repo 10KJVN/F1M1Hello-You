@@ -212,6 +212,7 @@ while Q11:
     if InputText == "A":
         Q11 = False
         Q17 = True
+        os.system('cls')
 #Griekenland aangekomen, nu nog verder in Europa
 while Q12:
     print("Je hebt alleen een vliegtuig naar Griekenland genomen.")
@@ -226,9 +227,11 @@ while Q12:
     if InputText == "A":
         Q12 = False
         Q16 = True
+        os.system('cls')
     if InputText == "B":
         Q12 = False
         Q20 = True
+        os.system('cls')
 #keuze tussen NL of DE.
 while Q13:
     print("Na een lange en gevaarlijke reis, komen jij en Parwana aan in Griekenland.")
@@ -249,11 +252,13 @@ while Q13:
     if InputText == "A":
         Q13 = False
         Q15 = True
+        os.system('cls')
         print("Type: A to continue...")
     InputText = input().capitalize()
     if InputText == "B":
         Q13= False
         Q12 = True
+        os.system('cls')
 #Je gaat naar duitsland
 while Q14:
     print("Je hebt je medegevangen aangespoord om te ontsnappen.")
@@ -268,6 +273,7 @@ while Q14:
     if InputText == "A":
         Q14 = False
         Q19 = True
+        os.system('cls')
 #Extra Einde, verkeerde keuzes. Doodlopend.
 while Q15:
     print("*8 uur later.*")
@@ -290,13 +296,12 @@ while Q15:
     if InputText == "n" or InputText == "N":
         print("[o]Thanks for running")
         print("")
-        os.system('cls')
     elif InputText == () :
         print("Invalid choice.")
         exit()
 #Duitsland, azielzoekers kamp.
 while Q16:
-    print("Na veel tussen stops, werk en meeliften. Kom je na een half jaar aan in Duitsland.")
+    print("Na veel tussen stops, werken  en meeliften. Kom je na een half jaar aan in Duitsland.")
     print("Je zit ongeveer anderhalf jaar in een Azielzoekers kamp.")
     print("")
     print("Een aardige man met een smartphone heeft je die laten gebruiken om je familie te bellen.")
@@ -304,42 +309,71 @@ while Q16:
     print("Ook vertelde je ze dat je momenteel in Duitsland bent.")
     time.sleep(2)
     print("")
+    print("Je belooft om ze naar Europa te halen..")
     print("Press A to continue...")
     InputText = input().capitalize()
     if InputText == "A":
         Q16 = False
         Q17 = True
-
+        os.system('cls')
+#Goeie Keuze tussen goede eindes, Nederland of toch duitsland?
 while Q17:
-    print("Je krijgt levenslang vanwege land verraad.")
-    print("Je familie probeert nog te onstnappen")
-    print("Je familie wordt gepakt.")
-    print("Type: A to continue")
+    print("Momenteel in Duitsland, zijn er inmiddels 2 jaar voorbij.")
+    print("Of je nou alleen of met Parwana bent gekomen naar dit Azielszoekerscentrum.")
+    print("")
+    time.sleep(1)
+    print("Je denkt aan de toekomst van jouw en je familie. Je twijfelt of je dat wilt opbouwen in Nederland of Duitsland.")
+    print("In duitsland heb je meer kans op succes, maar Nederland heeft betere educatie, heb je je laten vertellen.")
+    print("")
+    time.sleep(2)
+    print("Wat doe je?")
+    print("A: Verblijf in Nederland.")
+    print("B: Verblijf in Duitsland.")
     InputText = input().capitalize()
     if InputText == "A":
         Q17 = False
         Q21 = True
-#EINDE 1 Doodlopend einde
-while Q18:
-    print("")
-    InputText = input().capitalize()
-    if InputText == "A":
-        Q = False
-        Q = True
+        os.system('cls')
     if InputText == "B":
-        Q = False
-        Q = True
+        Q17 = False
+        Q19 = True 
+        os.system('cls')
+#EINDE 1 Einde in [G]riekse gevangenis
+while Q18:
+    print("Je steelt eten en rent weg met Parwana aan je hand.")
+    print("De politie achtervolgt je, ze zitten op je hielen!")
+    print("Terwijl je rent, struikelt parwana.")
+    print("Natuurlijk bezorgd, probeer je je dochter gerust te stellen.")
+    time.sleep(2)
+    print("")
+    print("Jullie worden opgepakt, en in de gevangenis gestopt voor illegaal verblijf en het stelen van eten.")
+    print("Je dochter, Parwana eindigt in een weeshuis.")
+    print("")
+    time.sleep(2)
+    print("GAME OVER")
+    print("Wil je herstaten? Y/N")
+    scriptinput = input().capitalize()
+    if scriptinput == "y" or scriptinput == "Y":
+        Q18 = False
+        Q1 = True
+        os.system('cls')
+        print("[o]*Het script word gerestart*")
+        print("")
+    elif scriptinput == "n" or scriptinput == "N": 
+        print("[o]Thanks for running")
+        print("")
+        break
 #EINDE 2 Gelukkig in [D]uitsland.
 while Q19:
+    print("Gefliciteerd, Na je lange reis ben je eindelijk in Duitsland geaccepteerd.")
+    print("Je krijgt een verblijfsvergunning, maar gaat eerst hulp vragen aan het Rode kruis.")
+    print("Zodat je gezin ook een toekomst kan opbouwen in Duitsland, zonder gevaar van de Taliban.")
     print("")
-    print("Hij heeft een bomgordel om zich heen")
-    print("Iedereen aan boord probeerd hem over te halen om het niet te doen.")
-    print("Hij luisterd niet en laat zijn vest exploderen.")
-    print("Iedereen aanboord is dood")
+    print("*3 Maanden later*")
     print("")
-    print("GAME OVER")
-    print("Wil jij dit script herstarten? Y/N")
-    print("")
+    print("Je Familie wordt overgevlogen naar Duitsland, waar jullie van de overheid een huis krijgen.")
+    print("De Kinderen gaan naar school, Parwana's vader heeft een baan.")
+    print("en daar leven jullie nog lang en gelukkig.")
     scriptinput = input().capitalize()
     if scriptinput == "y" or scriptinput == "Y":
         Q19 = False
@@ -349,22 +383,37 @@ while Q19:
     elif scriptinput == "n" or scriptinput == "N": 
         print("[o]Thanks for running")
         exit()
-#Einde 3 Einde in gevangenis
+#Einde 3 Terug gestuurt naar [A]fghanistan
 while Q20:
+    print("Je hebt geld nodig, dus je zoekt naar zwart werk in Griekenland.")
+    print("Mensen krijgen vermoedens dat je illegaal in Griekenland bent en schakelen de politie in.")
+    print("Je probeert het to ontkennen, maar ze zien door je act heen.")
     print("")
-    InputText = input().capitalize()
-    if InputText == "A":
-        Q = False
-        Q = True
-    if InputText == "B":
-        Q = False
-        Q = True
-#EINDE 4 G[e]lukkig in Nederland
-while Q21:
-    print("Je familie is gepakt en jullie worden allemaal gestraft.")
-    print("De overheid heeft besloten jullie te excuteren.")
+    print("Je wordt aangehouden en gaat de gevangenis is.")
+    print("Na een maand krijg je te horen dat je terug moet naar Afghanistan..")
+    print("")
     print("GAME OVER")
-    print("Wil je herstarten? Y/N")
+    print("wil je herstarten? Y/N")
+    scriptinput = input().capitalize()
+    if scriptinput == "y" or scriptinput == "Y":
+        Q20 = False
+        Q1 = True
+        print("[o]*Het script word gerestart*")
+        print("")
+    elif scriptinput == "n" or scriptinput == "N": 
+        print("[o]Thanks for running")
+        exit()
+#EINDE 4 Gelukkig in [N]ederland
+while Q21:
+    print("Je komt na een paar dagen aan in Nederland.")
+    print("Je legt je verhaal uit aan vluchtelingenwerk Nederland.")
+    print("Na een paar maanden, in samenwerking met het Rode Kruis lukt het jullie om je familie naar Nederland te halen.")
+    print("")
+    print("Na een inburgeringscursus, gaan de kinderen naar school en vindt je een baan.")
+    print("Je wordt door je omgeving geaccepteerd in de samenleving and voelt je gelukkig in Nederland.")
+    print("Zo leven jij en je gezin gelukkig in Nederland, bouwend aan de toekomst.")
+    print("")
+    print("GAME END.")
     scriptinput = input().capitalize()
     if scriptinput == "y" or scriptinput == "Y":
         Q21 = False
